@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --lighting-color: #0089b7;
   --dark-color: #003d62;
@@ -27,8 +27,9 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 a {
   text-decoration: none;
@@ -43,11 +44,9 @@ header {
   z-index: 100;
   background: var(--lighting-color);
 }
-
 section {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 40px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,6 +54,7 @@ nav {
   padding: 1rem;
 }
 nav ul {
+ 
   display: flex;
   gap: 1rem;
 }
@@ -68,10 +68,9 @@ nav li:hover {
   transition: 0.3s ease-in-out;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
-
 #hero {
   background: var(--dark-color);
   padding: 4rem 0;
@@ -87,7 +86,9 @@ nav li:hover {
   display: grid;
   place-items: center;
 }
-
+#hero img{
+    border-radius: 750px;
+} 
 #hero h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -129,22 +130,30 @@ nav li:hover {
     border-color: orange;
   }
 }
-
+.container img {
+  width: 400px;
+  height: 350px;
+  object-fit:fill;
+  display:grid;
+}
 /* Project Section */
 
 #project {
+    padding-top: 40px;
   background: var(--darker-color);
+  padding-bottom: 40px;
 }
 
 #project h2 {
   font-size: 6rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .project_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  
 }
 .grid_item {
   display: grid;
@@ -232,7 +241,6 @@ nav li:hover {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
-
 /* Footer */
 
 footer {
